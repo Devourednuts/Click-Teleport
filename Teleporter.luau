@@ -228,4 +228,4 @@ RunService.PostLocal:Connect(function()
     FramesLeft     = TELEPORT_HOLD_FRAMES
 end)
 
-print("Click Teleportation Initilised")
+print("Click Teleportation Initialised")
