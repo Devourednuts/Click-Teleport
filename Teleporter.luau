@@ -185,7 +185,7 @@ RunService.PostLocal:Connect(function()
     end
 
     local character = LocalPlayer.Character
-    local rootPart  = if character ~= nil then (character :: Model).PrimaryPart else nil
+    local rootPart: BasePart? = if character ~= nil then character:FindFirstChild("HumanoidRootPart") :: BasePart? else nil
 
     if FramesLeft > 0 and rootPart ~= nil and TeleportTarget ~= nil then
         local t = TeleportTarget :: Vector3
